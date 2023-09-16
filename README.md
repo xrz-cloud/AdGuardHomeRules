@@ -1,0 +1,2 @@
+# AdGuardHomeRules
+picacomic direct connect

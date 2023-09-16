@@ -1,0 +1,17 @@
+# picacomic use cloudflare cdn
+# redirect picacomic default domain to accessable ip
+# 向哔卡分配可用 CF CDN IP
+# pica's offical domain: [] = select 选择一项 , () = optional 可选
+# ([picaapi/img/storage/storage-b].)picacomic.com
+# ([img/storage/storage-b].)[diwodiwo/bidobido].xyz
+# or any other CF Anycast IP/Domain
+
+# only use this one below to redirect all picacomic subdomain
+# ||picacomic.com^$dnsrewrite=bidobido.xyz
+
+# only redirect necessary subdomain
+||picacomic.com$dnsrewrite=bidobido.xyz
+||picaapi.picacomic.com$dnsrewrite=bidobido.xyz
+||img.picacomic.com$dnsrewrite=img.bidobido.xyz
+||storage.picacomic.com$dnsrewrite=storage.bidobido.xyz
+||storage-b.picacomic.com$dnsrewrite=storage-b.bidobido.xyz

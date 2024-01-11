@@ -15,3 +15,6 @@
 ||flora.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
 ||pluto.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
 ||vesta.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+
+// v2ex
+||v2ex.com$dnsrewrite=anycast.xrzyun.eu.org

@@ -1,0 +1,17 @@
+# anycast.xrzyun.eu.org 解析ipv4及ipv6优选IP
+# 您可以填写别的优选IP
+
+# 网站会定期增加
+
+// xrzyun
+||xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+||blog.xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+
+// pica comic
+||picacomic.com$dnsrewrite=anycast.xrzyun.eu.org
+
+// neko.ws
+||venus.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+||flora.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+||pluto.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+||vesta.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org

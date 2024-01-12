@@ -4,8 +4,8 @@
 # 网站会定期增加
 
 // xrzyun
-||xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
-||blog.xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+|xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+|blog.xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
 
 // pica comic
 ||picacomic.com$dnsrewrite=anycast.xrzyun.eu.org

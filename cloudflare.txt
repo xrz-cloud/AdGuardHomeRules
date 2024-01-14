@@ -33,7 +33,9 @@
 
 # v2ex
 ||v2ex.com^$dnsrewrite=anycast.xrzyun.eu.org
-||v2ex.com^$dnsrewrite=NOERROR;HTTPS;32 v2ex.com alpn=h3
+
+|v2ex.com^$dnsrewrite=NOERROR;HTTPS;32 v2ex.com alpn=h3
+|www.v2ex.com^$dnsrewrite=NOERROR;HTTPS;32 v2ex.com alpn=h3
 
 # bangumi.moe
 # static. 子域名非cf托管 [TO FIX]

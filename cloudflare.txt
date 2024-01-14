@@ -41,5 +41,10 @@
 ||bangumi.moe^$dnsrewrite=NOERROR;HTTPS;32 bangumi.moe alpn=h3
 
 # exhentai.org
+# 测试无效
 ||exhentai.org^$dnsrewrite=anycast.xrzyun.eu.org
 ||exhentai.org^$dnsrewrite=NOERROR;HTTPS;32 exhentai.org alpn=h3
+
+# 蜜柑计划
+||mikanime.tv^$dnsrewrite=anycast.xrzyun.eu.org
+||mikanime.tv^$dnsrewrite=NOERROR;HTTPS;32 mikanime.tv alpn=h3

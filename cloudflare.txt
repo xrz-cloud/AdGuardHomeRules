@@ -1,20 +1,45 @@
 # anycast.xrzyun.eu.org 解析ipv4及ipv6优选IP
+# alpn="h3,h3-27,h3-28,h3-29" 指向h3
 # 您可以填写别的优选IP
 
 # 网站会定期增加
 
-// xrzyun
-|xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
-|blog.xrzyun.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+# xrzyun
+|xrzyun.eu.org^$dnsrewrite=anycast.xrzyun.eu.org
+|xrzyun.eu.org^$dnsrewrite=NOERROR;HTTPS;32 xrzyun.eu.org alpn=h3
+|blog.xrzyun.eu.org^$dnsrewrite=anycast.xrzyun.eu.org
+|blog.xrzyun.eu.org^$dnsrewrite=NOERROR;HTTPS;32 blog.xrzyun.eu.org alpn=h3
 
-// pica comic
+# pica comic
+# 有ECH,可不用h3
 ||picacomic.com$dnsrewrite=anycast.xrzyun.eu.org
 
-// neko.ws
-||venus.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
-||flora.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
-||pluto.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
-||vesta.nekoe.eu.org$dnsrewrite=anycast.xrzyun.eu.org
+|picacomic.com^$dnsrewrite=NOERROR;HTTPS;32 picacomic.com alpn=h3
+|picaapi.picacomic.com^$dnsrewrite=NOERROR;HTTPS;32 picaapi.picacomic.com alpn=h3
+|img.picacomic.com^$dnsrewrite=NOERROR;HTTPS;32 img.picacomic.com alpn=h3
+|storage.picacomic.com^$dnsrewrite=NOERROR;HTTPS;32 storage.picacomic.com alpn=h3
+|storage-b.picacomic.com^$dnsrewrite=NOERROR;HTTPS;32 storage-b.picacomic.com alpn=h3
 
-// v2ex
-||v2ex.com$dnsrewrite=anycast.xrzyun.eu.org
+# neko.ws
+||venus.nekoe.eu.org^$dnsrewrite=anycast.xrzyun.eu.org
+||flora.nekoe.eu.org^$dnsrewrite=anycast.xrzyun.eu.org
+||pluto.nekoe.eu.org^$dnsrewrite=anycast.xrzyun.eu.org
+||vesta.nekoe.eu.org^$dnsrewrite=anycast.xrzyun.eu.org
+
+||venus.nekoe.eu.org^$dnsrewrite=NOERROR;HTTPS;32 venus.nekoe.eu.org alpn=h3
+||flora.nekoe.eu.org^$dnsrewrite=NOERROR;HTTPS;32 flora.nekoe.eu.org alpn=h3
+||pluto.nekoe.eu.org^$dnsrewrite=NOERROR;HTTPS;32 pluto.nekoe.eu.org alpn=h3
+||vesta.nekoe.eu.org^$dnsrewrite=NOERROR;HTTPS;32 vesta.nekoe.eu.org alpn=h3
+
+# v2ex
+||v2ex.com^$dnsrewrite=anycast.xrzyun.eu.org
+||v2ex.com^$dnsrewrite=NOERROR;HTTPS;32 v2ex.com alpn=h3
+
+# bangumi.moe
+# static. 子域名非cf托管 [TO FIX]
+||bangumi.moe^$dnsrewrite=anycast.xrzyun.eu.org
+||bangumi.moe^$dnsrewrite=NOERROR;HTTPS;32 bangumi.moe alpn=h3
+
+# exhentai.org
+||exhentai.org^$dnsrewrite=anycast.xrzyun.eu.org
+||exhentai.org^$dnsrewrite=NOERROR;HTTPS;32 exhentai.org alpn=h3

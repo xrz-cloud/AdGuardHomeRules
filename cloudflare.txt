@@ -1,4 +1,6 @@
 # anycast.xrzyun.eu.org 解析ipv4及ipv6优选IP
+# IP来自 https://github.com/ymyuuu/IPDB
+# 可用IP domain: bestcf.onecf.eu.org, bestproxy.onecf.eu.org
 # alpn="h3,h3-27,h3-28,h3-29" 指向h3
 # 您可以填写别的优选IP
 

@@ -47,8 +47,12 @@
 # exhentai.org
 # 测试无效
 ||exhentai.org^$dnsrewrite=anycast.xrzyun.eu.org
-||exhentai.org^$dnsrewrite=NOERROR;HTTPS;32 exhentai.org alpn=h3
+|exhentai.org^$dnsrewrite=NOERROR;HTTPS;32 exhentai.org alpn=h3
 
 # 蜜柑计划
 ||mikanime.tv^$dnsrewrite=anycast.xrzyun.eu.org
-||mikanime.tv^$dnsrewrite=NOERROR;HTTPS;32 mikanime.tv alpn=h3
+|mikanime.tv^$dnsrewrite=NOERROR;HTTPS;32 mikanime.tv alpn=h3
+
+# AUR chaotic.cx
+||chaotic.cx^$dnsrewrite=anycast.xrzyun.eu.org
+|cdn-mirror.chaotic.cx^$dnsrewrite=NOERROR;HTTPS;32 cdn-mirror.chaotic.cx alpn=h3

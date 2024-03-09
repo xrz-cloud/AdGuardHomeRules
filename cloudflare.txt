@@ -54,7 +54,7 @@
 |mikanime.tv^$dnsrewrite=NOERROR;HTTPS;32 mikanime.tv alpn=h3
 
 # AUR chaotic.cx
-# 首页 aur.chaotic.cx 未使用cloudflare
-||chaotic.cx^$dnsrewrite=anycast.xrzyun.eu.org
-@@||aur.chaotic.cx^$important
+|cdn-mirror.chaotic.cx^$dnsrewrite=anycast.xrzyun.eu.org
 |cdn-mirror.chaotic.cx^$dnsrewrite=NOERROR;HTTPS;32 cdn-mirror.chaotic.cx alpn=h3
+|cf-builds.garudalinux.org^$dnsrewrite=anycast.xrzyun.eu.org
+|cf-builds.garudalinux.org^$dnsrewrite=NOERROR;HTTPS;32 cf-builds.garudalinux.org alpn=h3

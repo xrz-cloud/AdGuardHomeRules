@@ -50,6 +50,7 @@
 # |exhentai.org^$dnsrewrite=NOERROR;HTTPS;32 exhentai.org alpn=h3
 
 # 蜜柑计划
+||mikanani.me^$dnsrewrite=anycast.xrzyun.eu.org
 ||mikanime.tv^$dnsrewrite=anycast.xrzyun.eu.org
 # |mikanime.tv^$dnsrewrite=NOERROR;HTTPS;32 mikanime.tv alpn=h3
 
